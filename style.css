@@ -1,0 +1,156 @@
+:root {
+	/*color para fondo de la pagina*/
+	--FondoPagina: #f0f0f0;
+}
+
+body {
+	background-color: var(--FondoPagina) !important;
+	min-width: 400px;
+}
+
+img {
+	display: inline;
+}
+
+header {
+	background-color: #ffffff;
+	height: 100px;
+	box-shadow: 0 11px 7px -9px rgb(0 0 0 / 40%);
+	margin-bottom: 15px;
+}
+
+nav a {	
+	text-decoration: none;	
+	transition: all 0.5s!important;
+	position: relative;  
+	top: 0px;
+  }
+
+  nav a:hover {
+	
+	top: -5px;
+  }
+
+.menu {
+	display: inline;
+	float: right;
+}
+
+.div_frente_balangione{
+	margin: 0px auto !important;
+	background-color: #ffffff;}
+
+.frente_Balangione {
+	display: block;
+	width: 80%;
+	height: 70vh;
+	margin: 0px auto !important;
+}
+
+.contenido {
+	width: 100%;
+	height: 50vh;
+	background-color: aqua;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.container{
+ margin-top: 10px;}
+
+.titulo {
+	font-weight: bold;
+	background-color: none;
+	
+}
+.sobreNosotros {
+	background-color:  #ffffff;
+	/*margin-right: 1rem;*/
+	height: 300px;
+	text-align: center;
+	overflow-y: scroll;
+	border: 1px solid rgb(223, 217, 217);
+}
+
+.textoNosotros {
+	text-align: justify;
+}
+
+.clima {
+	background-color:  #ffffff;
+	/*margin-right: 1rem;*/
+	height: 300px;
+	text-align: center;
+	border: 1px solid rgb(223, 217, 217);
+}
+
+
+
+.climaImagen {
+	
+	height: 7rem;
+	margin-right: 1, 2rem;
+	display: flex;
+	justify-content: center;
+	border: 1px solid rgb(223, 217, 217);
+	margin: 0px auto;
+	margin-top: 50px;
+}
+
+.marcas {
+	/*height:auto;*/
+	height: 300px;
+	background-color:  #ffffff;
+	border: 1px solid rgb(223, 217, 217);
+}
+
+.cuadro{/*border: 1px solid black;
+	border-radius: 10px;*/
+
+	padding: 2px;
+	margin-top: 5px;
+	
+}
+
+.logoCordex {
+	width: 100%;
+	margin-bottom: 10px;
+}
+.logoJohn {
+	width: 100%;
+	margin-bottom: 10px;
+	background-color: white;
+}
+
+.logoMoura {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+
+footer {
+	background-color: var(--FondoPagina);
+	margin-top: 20px;
+	
+}
+
+.listaFooter li {
+	display: inline;
+	
+}
+.listaFooter {
+	
+	padding: 0px;
+}
+
+.contenedor,
+.mapSite {
+	background-color: white;
+}
+
+button {
+	display: block;
+	width: 100%;
+	margin-bottom: 2px !important;
+}
+

@@ -1,0 +1,68 @@
+:root {
+	/*color para fondo de la pagina*/
+	--FondoPagina: #f0f0f0;
+}
+
+body {
+	background-color: var(--FondoPagina) !important;
+}
+
+img {
+	display: inline;
+}
+
+header {
+	background-color: #ffffff;
+	height: 100px;
+	box-shadow: 0 11px 7px -9px rgb(0 0 0 / 40%);
+	margin-bottom: 15px;
+}
+
+
+nav a {	
+	text-decoration: none;	
+	transition: all 0.5s;	
+	position: relative;  
+	top: 0px;
+  }
+
+  nav a:hover {
+	
+	top: -5px;
+  }
+  
+.menu {
+	display: inline;
+	float: right;
+}
+.container{
+    margin-top: 10px;
+    background-color:#ffffff;
+}   
+
+.principal{background-color: var(--FondoPagina) !important;}
+footer {
+	background-color: var(--FondoPagina);
+	margin-top: 20px;
+}
+
+.listaFooter {
+	
+	padding: 0px;
+}
+.listaFooter li {
+	display: inline;
+}
+
+.contenedor,
+.mapSite {
+	background-color: white;
+}
+
+button {
+	display: block;
+	width: 100%;
+	margin-bottom: 2px !important;
+}
+
+

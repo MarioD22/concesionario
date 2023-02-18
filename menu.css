@@ -1,0 +1,227 @@
+.main-links {
+	display: flex;
+	gap: 1rem;
+	list-style: none;
+}
+
+.main-links li {
+	padding: 0.5rem 1rem;
+	/* background-color: rgb(10, 207, 197);*/
+	margin-bottom: 1px;
+}
+
+.dropdown-li {
+	position: relative;
+	display: block !important;
+	margin-bottom: 1px;
+}
+
+.dropdown-li:hover .dropdown {
+	display: block !important;
+	opacity: 1;
+}
+
+.dropdown {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 100%;
+
+	opacity: 0;
+	display: none;
+}
+
+.l1 {
+	display: block !important;
+	text-decoration: none;
+}
+
+.dropdown li {
+	list-style: none;
+}
+
+.btn-primary {
+	background-color: white;
+	color: black;
+	border: none;
+}
+
+.btn-primary:hover {
+	background-color: rgb(240, 234, 234);
+	color: black;
+}
+
+.desktop {
+	display: inherit;
+}
+
+.mobile {
+	display: none;
+}
+
+@media screen and (max-width: 600px) {
+	/* mobile ahora estará visible */
+	.mobile {
+		display: inherit;
+	}
+
+	/* desktop ahora no se mostrará */
+	.desktop {
+		display: none;
+	}
+}
+
+/* =================================================== */
+/* BOTÓN Y MENU MOBILE =============================== */
+/* =================================================== */
+
+.btn-menu {
+ 
+  height: 30px;
+  
+  width: 30px;
+  /* flotante a la derecha, como también en el menu que utilizamos en desktop. */
+  float: right;
+  /* activamos la posición relativa para definir como se comportará la propiedad "top". */
+  position: relative;
+  /* nos desplazamos 10 píxeles hacia abajo, relativo a su posición natural (relative)  */
+  top: 10px;
+  /* activamos las transiciones de todas las propiedades con "all" y le damos una duración de 150 milisegundos */
+  transition: all 0.15s;
+  /* definimos la opacidad al 0.5 donde 1 es la opacidad absoluta, quedando al 50% de transparencia. */
+  opacity: 0.5;
+}
+
+.btn-menu-abierto,
+.btn-menu:hover {
+  /* se muestra una mano en el puntero para indicarle al usuario que allí puede hacer click. */
+  cursor: pointer;
+
+  /* por defecto la opacidad siempre está en 1. En este caso la definimos como 1 para que se vea normal sin transparencias. Cuando se termine la transición, volverá al 50% de transparencia que definimos arriba.*/
+  opacity: 1;
+
+  /* reduce el tamaño al 80% */
+  transform: scale(0.8);
+}
+
+.btn-menu-abierto .linea {
+  /* con var() llamamos a la variable que definimos en root al comenzar el documento. */
+  background-color: black;
+}
+
+/* Esta clase la utilizaremos para dibujar las líneas del menu hamburguesa. */
+.linea {
+  /* 30 píxeles de ancho */
+  width: 30px;
+  /* 4 píxeles de alto, de esta forma nos queda un rectángulo de 30 x 4 */
+  height: 4px;
+  /* fondo negro para que el relleno de nuestra línea sea negro. */
+  background-color: black;
+  /* margen de 4 píxeles en vertical para que se separen las líneas, por ende cada línea al tener 4 arriba
+   y 4 abajo, se separa de la otra linea con 8 px en total. Y cero para el margen horizontal. */
+  margin: 4px 0px;
+  /* redondeamos los bordes en 5 píxeles */
+  border-radius: 5px;
+  /* definimos desde donde se van a comenzar a contar las unidades que definiremos 
+  en top y left. En este caso, desde su posición relativa. */
+  position: relative;
+  /* iniciamos la posición superior en cero */
+  top: 0px;
+  /* iniciamos la posición izquierda en cero */
+  left: 0px;
+  /* opacidad completa (sin transparencia) */
+  opacity: 1;
+  /* activamos las transiciones para todas las propiedades y definimos la duración en 200 milisegundos  */
+  transition: all 0.2s;
+}
+
+/* tomamos la primer línea que hay dentro de nuestro menu en modo abierto */
+.btn-menu-abierto .linea:nth-child(1) {
+  /* rotamos en 35 grados para comenzar a formar la cruz */
+  transform: rotate(35deg);
+  /* desplazamos en 8 px desde la posición superior */
+  top: 8px;
+  /* desplazamos 2 píxeles hacia la izquierda desde la posición izquierda */
+  left: -2px;
+  /* agrandamos su tamaño en 5 píxeles, recuerden que tiene el tamaño del contenedor que es de 30 píxeles. */
+  width: 35px;
+}
+
+/* tomamos la segunda línea que hay dentro de nuestro menu en modo abierto */
+.btn-menu-abierto .linea:nth-child(2) {
+  /* definimos la opacidad en cero haciéndola totalmente transparente. */
+  opacity: 0;
+}
+
+/* tomamos la tercera línea que hay dentro de nuestro menu en modo abierto */
+.btn-menu-abierto .linea:nth-child(3) {
+  /* rotamos en sentido contrario a la línea 1 */
+  transform: rotate(-34deg);
+  /* subimos 8 píxeles la línea */
+  top: -8px;
+  /* desplazamos en 2 píxeles a la izquierda */
+  left: -2px;
+  /* también aumentamos el tamaño para que cubra el cuadrado del contenedor */
+  width: 35px;
+}
+
+/* Este es el contenedor para el menu mobile, dentro le pondremos las etiquetas <a> */
+.btn-list {
+  /* fondo blanco */
+  background-color: white;
+  /* definimos una sombra similar al header. */
+  box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.3);
+  /* también lo hacemos flotar a la derecha. */
+  float: right;
+  /* mantiene una posición fija en la pantalla, de esta forma no se mueve al hacer scroll. */
+  position: fixed;
+  /* desplazamos 62 píxeles hacia abajo  */
+  top: 110px;
+  /* definimos un ancho de 200px para este contenedor */
+  width: 200px;
+  /* desplazamos 400 pixeles afuera del borde derecho para que esté oculto al iniciar, 
+  desde allí comenzará la animación dándonos el efecto de ingreso a la pantalla desde afuera a la derecha. */
+  right: -400px;
+  /* activamos las transiciones en 250 milisegundos para todas las propiedades */
+  transition: all 0.25s;
+}
+
+/* Definimos estilos para las etiquetas <a> contenidas dentro de nuestra clase .btn-list  */
+.btn-list a {
+  /* sangrado interno de 20px en vertical y 32px en horizontal */
+  padding: 20px 32px;
+  /* tamaño de letra de 15px de alto */
+  font-size: 15px;
+  /* quitamos la decoración haciendo que desaparezca el subrayado natural del enlace. */
+  text-decoration: none;
+  /* color gris para la letra */
+  color: #333;
+  /* el elemento de bloque ocupa el ancho máximo disponible, ocupando el 100% en ancho de su contenedor */
+  display: block;
+  /* color blanco de fondo */
+  background-color: white;
+  /* alineamos el texto a la derecha */
+  text-align: right;
+  /* activamos las transiciones en 250 milisegundos para todas las propiedades */
+  transition: all 0.25s;
+}
+
+/* definimos el estado de mouse over (cuando el puntero del mouse se posiciona arriba del elemento) 
+para las etiquetas <a> definidas anteriormente */
+.btn-list a:hover {
+  /* color de texto blanco */
+  color: white;
+  /* color de fondo rojo como el logo de ESPN */
+  background-color: rgb(230, 230, 221);
+  /* definimos el top en cero para contrarrestar el top dado en la clase nav > a */
+  top: 0;
+}
+
+/* creamos una nueva clase para nuestro menu mobile que será añadida desde JavaScript. */
+.btn-list-abierto {
+  /* al volver a su posición inicial, nos dará el efecto de estar entrando a la web desde la derecha */
+  right: 0px;
+}
+

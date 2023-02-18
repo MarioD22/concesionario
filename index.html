@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="Es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<!--CSS-->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+			crossorigin="anonymous" />
+
+		<link rel="stylesheet" href="menu.css">	
+      <!--Script-->
+	  <script src="script.js"></script>
+
+		<!--ViewPort-->
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<title>Pagina de Inicio| Balangione SRL</title>
+	</head>
+	<body>
+
+		<!--COMIENZO HEADER-->
+		<div class="container"><!-- inicio Contenedor de la pagina web-->
+			<div class="container"> <!-- inicio Contenedor del Header-->
+						<header class="row align-items-center"><!--con la clase row se divide el header en 12 columnas-->
+							<div class="col-4"> <!-- las primeras 4 columnas se usan para el logo-->
+								<img
+									class="logoBalangione"
+									src="images/logoBalangione.jpg"
+									alt="Balangione" />
+							</div>
+
+							<div class="col-8"><!-- se toman 8 de las 12 columnas para el menu -->
+
+								<nav class="menu desktop">			<!--inicio del menu con 2 clases menu y desktop-->						
+										<ul class="main-links"> <!--inicio de lista tamaño escritorio-->
+										        <!--List items-->
+										  <li >
+											<a class="btn btn-primary" href="index.html">Inicio</a>											
+										  </li>
+
+										  <li class="btn btn-primary dropdown-li"  style=margin-top:5px>
+											Repuestos
+											<ul class="dropdown"><!--inicio del submenu con la clase dropdown del menu-->
+													<li>
+														<a class="btn btn-primary" href="../Balangione/repuestos/repuestos.html" role="button" >Repuesto</a>
+													</li>
+													<li >
+														<a class="btn btn-primary l1" href="https://partscatalog.deere.com/jdrc/">JDParts</a>
+													</li>
+													<li class="btn btn-primary l1">Promos</li>
+											</ul> <!--fin clase dropdown del menu-->
+
+										  </li>
+										  <li >
+											<a class="btn btn-primary" href="#" role="button">Pedidos</a>
+											</li>
+										  <li >
+											<a class="btn btn-primary" href="../Balangione/contacto/contacto.html" role="button">Contacto</a>
+										</li>
+										  
+										</ul> <!--fin de la lista tamaño escritorio-->
+									  
+								</nav> <!--fin del menu con 2 clases menu y desktop-->
+
+
+
+
+										
+													<!-- Botón de menu tipo hamburguesa. Aparecerá solo en modo mobile. -->
+													<div class="btn-menu mobile" id="btn-menu" onclick="Menu()">
+														<!-- dentro ponemos 3 div, uno para cada línea -->
+														<div class="linea"></div>
+														<div class="linea"></div>
+														<div class="linea"></div>
+													</div>
+											
+													<!-- Lista de botones para el menu mobile -->
+													<nav class="btn-list mobile" id="btn-list">
+														<a href="#">Inicio</a>
+														<a href="#">Repuesto</a>
+														<a href="#">JDParts</a>
+														<a href="#">Promos</a>
+														<a href="#">Pedidos</a>
+														<a href="#">Contacto</a>
+													</nav>
+
+							</div> <!--fin de la clase col-8 -->
+						</header>
+			</div><!--FIN del contenedr del header-->
+		<!--FIN HEADER-->
+
+		<!--IMAGEN DEL FRENTE DEL CONCESIONARIO-->
+				
+					<div class="div_frente_balangione">
+								<img
+									class="frente_Balangione"
+									src="../Balangione/images/Balangione_frente.jpg"
+									alt="Balangione San Francisco" />
+					</div>				
+		<!--FIN IMAGEN DEL FRENTE DEL CONCESIONARIO-->
+<!--
+					<div class="contenido" style="text-align: center;">
+							contenido pagina principal <br>
+							noticias<br>
+							promos<br>
+
+					</div>	
+-->
+
+				<!--SOBRE NOSOTROS-->	
+
+		<div class="container text center"><!--Incio del contenedor al final de 3 columnas-->
+				<div class="row"><!--con row creamos las 12 columnas-->
+						<div class="col-4 sobreNosotros"> <!--inicio sobre nosotros usa las primeras 4 col-->
+			
+							<p class="titulo">Sobre Nosotros</p>
+								<div>
+									<p class="textoNosotros">
+										Balangione, Volpe y Vaudagna S.R.L.</span> fue fundada en el año 1955 por los señores Juan Balangione, Celestino Volpe y Miguel Vaudagna; originarios de San Francisco (Córdoba), Villa Vaudagna (Córdoba) y San Vicente (Santa Fé), siendo su actividad principal la venta de tractores.
+										En el año 1958 es nombrada concesionaria oficial John Deere, acompañando a la marca desde su llegada al país, en la comercialización de sus productos.
+										Años posteriores logra la distribución de IKA-RENAULT, actividad que desempeña hasta 1991.
+										Sus fundadores y descendientes administraron la concesionaria hasta 1993, momento en el cual fue adquirida por los actuales titulares.
+										Con el avance de la frontera agropecuaria se decidió la apertura de una sucursal en Arroyito, Provincia de Córdoba, a  mediados del año 2001.
+										La casa central se encuentra en San Francisco, capital del departamento San Justo, Provincia de Córdoba, ciudad de aproximadamente 70.000 habitantes y zona mixta de producción agropecuaria.
+										A partir de mayo de 2007 y con motivos de imagen y marketing la empresa cambia su nombre a Balangione S.R.L.
+										Con más de medio siglo en la venta de maquinaria agrícola la empresa se enfrenta al desafío de crecer abocándose al servicio como su mayor esfuerzo.
+										
+									</p>
+								</div>
+						</div><!--Fin sobre nosotros usa las primeras 4 col-->
+
+	    				<div class="col-4 clima "> <!--inicio clima usa las col-5 a col 8-->
+									<p class="titulo">clima</p>
+									<a href="https://www.clima.com/argentina/cordoba/san-francisco" target="_blank">
+										<img  class="climaImagen"src="../Balangione/images/clima.png" alt="">
+									</a>
+						</div><!--fin clima usa las col-5 a col 8-->
+
+				   <div class="col-4 marcas"> <!--inicio contenedor de marcas usa las col-9 a col 12-->
+			
+								<div class="cordex cuadro"><!--primer marca  2 clases la marca y una gral para el cuadro-->
+									<a href="https://cordex.com/es/agri-es/" target="_blank">
+										<img class = "logoCordex"src="../Balangione/images/cordex.png" alt="">
+									</a>
+									
+								</div>
+
+									<div class="john cuadro"><!--segunda marca 2 clases la marca y una gral para el cuadro-->
+										<a href="https://partscatalog.deere.com/jdrc/" target="_blank">
+										<img class = "logoJohn"src="../Balangione/images/logoJohnDeere.png" alt="">
+									    </a>
+									</div>
+
+								<div class="moura cuadro"><!--tercer marca  2 clases la marca y una gral para el cuadro-->
+									<a href="https://www.moura.com.ar/" target="_blank">
+									<img class="logoMoura"src="../Balangione/images/logoMoura.png" alt="">
+									</a>
+								</div>
+			 
+				    </div>	<!--Fín contenedor de marcas usa las col-9 a col 12-->
+
+	       		</div><!-- cierra el row de 12 columnas-->
+      </div> <!-- cierra el contenedor de sobre nosotros, clima y marcas-->
+	
+				<!--COMIENZO FOOTER-->
+						<footer>
+							<ul class="listaFooter">
+								<li><a href="index.html"">Contacto</a></li>
+								<li><a href="../Balangione/mapa/mapa.html">Mapa del sitio</a></li>
+								<li><a href="#">Norma de Privacidad</a></li>
+								<li><a href="#">Aviso legal</a></li>
+							</ul>
+
+							Copyright © 2022 - Balangione S.R.L. Todos los derechos reservados.
+						</footer>
+					<!--FIN FOOTER-->
+
+					
+</div><!--CIERRA CONTENEDOR PRINCIPAL DE LA PAGINA WEB-->
+
+
+
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script
+			src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+			crossorigin="anonymous"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+			crossorigin="anonymous"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+			crossorigin="anonymous"></script>
+	</body>
+</html>

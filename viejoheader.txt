@@ -1,0 +1,27 @@
+
+		<!--COMIENZO HEADER-->
+		<div class="container">
+			<div class="container">
+						<header class="row align-items-center">
+							<div class="col-4">
+								<img
+									class="logoBalangione"
+									src="images/logoBalangione.jpg"
+									alt="Balangione" />
+							</div>
+
+							<div class="col-8">
+								<nav class="menu">
+										<a class="btn btn-primary" href="index.html" role="button"
+											>Inicio</a
+										>
+										<a class="btn btn-primary" href="../Balangione/repuestos/repuestos.html" role="button">Repuestos</a>
+										<a class="btn btn-primary" href="#" role="button">Pedidos</a>
+										<a class="btn btn-primary" href="../Balangione/contacto/contacto.html" role="button">Contacto</a>
+								</nav>
+							</div>
+						</header>
+			</div>
+		<!--FIN HEADER-->
+
+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
