@@ -80,11 +80,11 @@ document.write(`
 													<!-- Lista de botones para el menu mobile -->
 													<nav class="btn-list mobile" id="btn-list">
 														<a href="../index.html">Inicio</a>
-														<a href="#">Repuesto</a>
-														<a href="#">JDParts</a>
-														<a href="#">Promos</a>
+														<a href="../repuestos/repuestos.html">Repuesto</a>
+														<a href="https://partscatalog.deere.com/jdrc/">JDParts</a>
+														<a href="https://partscatalog.deere.com/jdrc/">Promos</a>
 														<a href="#">Pedidos</a>
-														<a href="#">Contacto</a>
+														<a href="../contacto/contacto.html">Contacto</a>
 													</nav>
 
 							</div> <!--fin de la clase col-8 -->

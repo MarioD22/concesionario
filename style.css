@@ -89,6 +89,7 @@ nav a {
 .climaImagen {
 	
 	height: 7rem;
+	width: 70%;
 	margin-right: 1, 2rem;
 	display: flex;
 	justify-content: center;
@@ -154,3 +155,54 @@ button {
 	margin-bottom: 2px !important;
 }
 
+@media screen and (max-width: 600px) {
+	/* mobile ahora estará visible */
+	.mobile {
+		display: inherit;
+		z-index: 50;
+  	}
+
+	/* desktop ahora no se mostrará */
+	.desktop {
+		display: none;
+	}
+  
+  .banner{ display: block !important;
+           }
+
+  .sobreNosotros{    
+          display: block;
+          height: auto; 
+		  max-width: 100% !important;
+                }
+.clima{
+  display: block;
+  height: auto;
+  max-width: 100% !important;
+}
+
+.climaImagen{
+  height: auto;
+  width: 50%;
+  margin-right: 1, 2rem;
+  display: flex;
+  justify-content: center;
+  border: 1px solid rgb(223, 217, 217);
+  margin: 0px auto;
+  margin-top: 15px;
+  margin-bottom: 24px;}
+
+  .marcas{display: block;
+       height: auto;
+	   max-width: 100% !important;
+
+	}
+
+	.logoCordex,.logoJohn, .logoMoura {display: block;
+									width: 60%;
+									margin-left: auto;
+									margin-right: auto;}
+	
+
+	
+}
