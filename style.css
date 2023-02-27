@@ -26,7 +26,7 @@ nav a {
 	top: 0px;
   }
 
-  nav a:hover {
+  nav .anim:hover {
 	
 	top: -5px;
   }
